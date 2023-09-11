@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewpoint" content="with=device-width" , initial-scale="1.0">
+    <title>GrowWithHxrsh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo" height="120" width="150"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+               
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">WORKOUTS</a></li>
+                    <li><a href="">DIET PLAN</a></li>
+                    <li><a href="">SUPPLEMENTS</a></li>
+                    <li><a href="">CONTACT</a></li>
+
+
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Following The Legacy </h1>
+            <p>Chasing The Aesthetics</p>
+            <a href="'" class="hero-btn">Visit Us To Know More</a>
+
+        </div>
+
+    </section>
+    <!-----Javascript for toggle------->
+<script>
+    var navLinks=document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+</body>
+
+</html>
